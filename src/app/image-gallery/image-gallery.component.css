@@ -1,0 +1,64 @@
+.gallery {
+  flex-wrap: wrap;
+}
+
+.image-box, .add-image-box {
+  position: relative;
+  overflow: hidden;
+  justify-content: center;
+  width: 350px;
+  height: 350px;
+  padding: 0;
+  margin: 25px 10px;
+}
+
+.image-box img {
+  padding: 10px;
+  color: white;
+  text-align: center;
+  align-self: center;
+  max-width: 330px;
+  max-height: 330px;
+  margin: 0 auto;
+  transition: 0.4s opacity;
+}
+
+.image-box .img-options {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 1.2em;
+  left: 0;
+  bottom: -60px;
+  padding: 10px 0;
+  position: absolute;
+  transition: 0.4s bottom;
+  text-align: center;
+  width: 100%;
+}
+
+.image-box:hover .img-options {
+  bottom: 0;
+}
+
+.add-image-box {
+  transition: 0.4s background-color;
+  text-align: center;
+}
+
+.add-image-box mat-card-content{
+  margin: auto;
+}
+
+.add-image-box .add-image-icon, .add-image-box span {
+  color: #1A1A1A;
+}
+
+.add-image-box .add-image-icon {
+  font-size: 70px;
+  width: 100%;
+}
+
+.add-image-box:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}

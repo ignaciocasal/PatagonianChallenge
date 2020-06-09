@@ -1,0 +1,23 @@
+<div class="gallery" fxLayout fxLayoutAlign="space-evenly" *ngIf="!isLoading">
+  <mat-card class="add-image-box" fxLayout="column" routerLink="/image-gallery/upload">
+    <mat-card-content>
+      <mat-icon class="add-image-icon">add_photo_alternate</mat-icon>
+      <span>Add new image</span>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card *ngFor="let img of images" class="image-box mat-elevation-z8" fxLayout>
+    <mat-card-content fxLayout="column" fxLayoutAlign="center center" class="card-content spacing">
+      <img [src]="img.imageUrl" alt="image"/>
+      <span class="img-options">
+        <button mat-mini-fab color="warn" (click)="removeImage(img)"><mat-icon>delete</mat-icon></button>
+      </span>
+    </mat-card-content>
+  </mat-card>
+</div>
+
+<div fxLayout fxLayoutAlign="center center" *ngIf="isLoading">
+  <mat-spinner></mat-spinner>
+</div>
+
+

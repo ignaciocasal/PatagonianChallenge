@@ -1,0 +1,41 @@
+<section class="image-uploader"
+         fxLayout
+         fxLayoutAlign="center">
+  <form [formGroup]="formTemplate"
+        (submit)="onSubmit(formTemplate.value)">
+    <mat-card fxFlex.xs="100%"
+              fxFlex="800px"
+              class="mat-elevation-z8">
+      <mat-card-content fxLayout="column"
+                        fxLayoutAlign="center center"
+                        class="card-content spacing">
+        <img [src]="previewImgSrc"
+             class="img-preview"
+             (click)="fileUploader.click()">
+        <label>Select image to upload</label>
+        <input type="file"
+               accept="image/*"
+               #fileUploader
+               formControlName="imageUrl"
+               (change)="showPreview($event)">
+        <span *ngIf="isSubmitted && formControls.imageUrl.errors?.required"
+              class="text-danger">Please provide an image.</span>
+      </mat-card-content>
+      <mat-card-actions fxLayoutAlign="center">
+        <mat-spinner *ngIf="isLoading"></mat-spinner>
+        <div *ngIf="!isLoading">
+          <button mat-raised-button
+                  color="primary"
+                  type="submit">
+            Upload
+          </button>
+          <button mat-raised-button
+                  type="button"
+                  routerLink="/image-gallery">
+            Back
+          </button>
+        </div>
+      </mat-card-actions>
+    </mat-card>
+  </form>
+</section>

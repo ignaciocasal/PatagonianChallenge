@@ -1,0 +1,22 @@
+.welcome {
+  text-align: center;
+}
+
+.logo-img {
+  width: 300px;
+}
+
+.icon-img {
+  width: 64px;
+}
+
+h1 {
+  font-size: 2em;
+  letter-spacing: 5px;
+}
+
+h3{
+  font-weight: 400;
+  margin-top: 100px;
+}
+
