@@ -1,27 +1,35 @@
-# AngularImageGallery
+![Demo gif](https://github.com/ignaciocasal/Angular-Image-Gallery/blob/master/screenshots/demo.gif?raw=true)
+# Angular Image Gallery
+This is a responsive web application that displays images in a gallery. It also allows uploading and removing images. 
+It was built using Angular and Firebase for database storage and hosting. The UI is Material Design based using Angular Material.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.3.
+# Demo
+Here is a working live demo:
+https://patagonianchallenge.web.app
 
-## Development server
+# Tech Stack
+- Angular
+- Angular Forms
+- Angular Material
+- Angular Router
+- File Uploader
+- RxJS
+- TypeScript
+- Firebase
+- Responsive Design
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+# Screenshots
+![Image Gallery](https://github.com/ignaciocasal/Angular-Image-Gallery/blob/master/screenshots/1.png?raw=true)
 
-## Code scaffolding
+![Image Uploader](https://github.com/ignaciocasal/Angular-Image-Gallery/blob/master/screenshots/2.png?raw=true)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+![Profile](https://github.com/ignaciocasal/Angular-Image-Gallery/blob/master/screenshots/4.png?raw=true)
 
-## Build
+![Products Table](https://github.com/ignaciocasal/Angular-Image-Gallery/blob/master/screenshots/3.png?raw=true)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+# Running app locally
+    $ npm install
+	$ npm start
+	
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
