@@ -2,13 +2,16 @@
   <button fxHide fxShow.xs mat-icon-button (click)="onToggle()">
     <mat-icon>menu</mat-icon>
   </button>
-  <img src="assets/img/patagonian-logo-small.png" class="logo-img" alt="logo">
-  <a routerLink="/">Patagonian Challenge</a>
-  <div fxFlex fxLayoutAlign="flex-end" fxHide.xs>
+  <a routerLink="/" class="logo"><img src="assets/img/patagonian-logo-small.png" class="logo-img" alt="logo"> Angular Image Gallery</a>
+  <div fxFlex fxLayoutAlign="flex-start" fxHide.xs>
     <ul class="menu-items" fxLayout fxLayoutGap="25px">
-      <li><a routerLink="/personal-content" routerLinkActive="is-active"><mat-icon>person</mat-icon> Personal Content</a></li>
       <li><a routerLink="/image-gallery" routerLinkActive="is-active"><mat-icon>collections</mat-icon> Image Gallery</a></li>
       <li><a routerLink="/products" routerLinkActive="is-active"><mat-icon>shopping_cart</mat-icon> Products</a></li>
+    </ul>
+  </div>
+  <div fxFlex fxLayoutAlign="flex-end" fxHide.xs>
+    <ul class="menu-items" fxLayout fxLayoutGap="25px">
+      <li><a routerLink="/profile" routerLinkActive="is-active"><mat-icon>person</mat-icon> Profile</a></li>
     </ul>
   </div>
 </mat-toolbar>

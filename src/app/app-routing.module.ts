@@ -8,7 +8,7 @@ import {ImageUploaderComponent} from "./image-uploader/image-uploader.component"
 
 const routes: Routes = [
   {path:'', component: WelcomeComponent},
-  {path:'personal-content', component: PersonalContentComponent},
+  {path:'profile', component: PersonalContentComponent},
   {path:'image-gallery', component: ImageGalleryComponent},
   {path:'image-gallery/upload', component: ImageUploaderComponent},
   {path:'products', component: ProductsComponent}

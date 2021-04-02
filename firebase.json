@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/patagonian-challenge",
+    "public": "dist/angular-image-gallery",
     "ignore": [
       "firebase.json",
       "**/.*",

@@ -3,8 +3,20 @@ a {
   color: white;
 }
 
-a:hover, a:focus {
-  color: lightgray;
+.menu-items a:hover, .menu-items a:focus {
+  text-decoration: underline;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-right: 46px;
+}
+
+.logo-img {
+  height: 30px;
+  margin: 0 12px;
 }
 
 .menu-items {
@@ -18,10 +30,5 @@ a:hover, a:focus {
 }
 
 .is-active {
-  color: lightgray;
-}
-
-.logo-img {
-  height: 30px;
-  margin: 0 12px;
+  text-decoration: underline;
 }

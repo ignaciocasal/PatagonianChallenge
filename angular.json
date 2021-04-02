@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "patagonian-challenge": {
+    "angular-image-gallery": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/patagonian-challenge",
+            "outputPath": "dist/angular-image-gallery",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -59,18 +59,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "patagonian-challenge:build"
+            "browserTarget": "angular-image-gallery:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "patagonian-challenge:build:production"
+              "browserTarget": "angular-image-gallery:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "patagonian-challenge:build"
+            "browserTarget": "angular-image-gallery:build"
           }
         },
         "test": {
@@ -105,7 +105,7 @@
         }
       }
     },
-    "patagonian-challenge-e2e": {
+    "angular-image-gallery-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -114,11 +114,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "patagonian-challenge:serve"
+            "devServerTarget": "angular-image-gallery:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "patagonian-challenge:serve:production"
+              "devServerTarget": "angular-image-gallery:serve:production"
             }
           }
         },
@@ -134,5 +134,5 @@
       }
     }
   },
-  "defaultProject": "patagonian-challenge"
+  "defaultProject": "angular-image-gallery"
 }
